@@ -47,7 +47,7 @@ class SelfStudy extends BaseModel
         ];
 
         $result = [
-            'head_img' => "http://xiaozi.cn/image/util/xiaozi.png",
+            'head_img' => "https://www.zjxiaozi.xin/image/util/xiaozi.png",
             'searchList'=>$searchList
         ];
 

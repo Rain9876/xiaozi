@@ -18,15 +18,15 @@ class PostArticle extends BaseModel
     }
 
     public function postImg(){
-        return $this->belongsTo('Image','postImg_id',"id");
+        return $this->belongsTo('image','postImg_id',"id");
     }
 
     public function headImg(){
-        return $this->belongsTo('Image','headImg_id',"id");
+        return $this->belongsTo('image','headImg_id',"id");
     }
 
     public function avatarImg(){
-        return $this->belongsTo('Image','avatarImg_id',"id");
+        return $this->belongsTo('image','avatarImg_id',"id");
     }
 
     public static function getPostArticleById($id){

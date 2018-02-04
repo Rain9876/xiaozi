@@ -12,7 +12,7 @@ class Society extends BaseModel
     }
 
     public function img(){
-        return $this->belongsTo('Image','img_id','id');
+        return $this->belongsTo('image','img_id','id');
     }
 
     public static function getAllSocieties($page=1,$size=5){

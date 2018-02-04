@@ -9,7 +9,7 @@ class ArticleDetail extends BaseModel
     protected $hidden =['id','delete_time','update_time','article_id',"img_id","hint"];
 
     public function img(){
-        return $this->belongsTo('Image','img_id',"id");
+        return $this->belongsTo('image','img_id',"id");
     }
 
 }

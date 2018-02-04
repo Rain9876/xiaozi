@@ -4,6 +4,7 @@ namespace app\api\model;
 use think\Db;
 class Activity extends BaseModel
 {
+    protected $table = 'Activity';
     protected $hidden = ['delete_time','update_time','img_id'];
 
     public function article(){

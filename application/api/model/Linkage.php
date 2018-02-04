@@ -4,6 +4,7 @@ namespace app\api\model;
 
 class Linkage extends BaseModel
 {
+    protected $table = 'Linkage';
     protected $hidden =['update_time','delete_time','quote'];
 
     public function address(){

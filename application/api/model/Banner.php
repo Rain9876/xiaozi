@@ -10,6 +10,8 @@ namespace app\api\model;
 
 class Banner extends BaseModel
 {
+    protected $table = 'Banner';
+
     protected $hidden = ['delete_time','update_time'];
 
     public function items(){

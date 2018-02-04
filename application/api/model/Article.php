@@ -12,6 +12,7 @@ use think\db\Query;
 
 class Article extends BaseModel
 {
+    protected $table = 'Article';
     protected $hidden =['id','delete_time','update_time','create_time'];
 
     public function detail(){

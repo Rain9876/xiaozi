@@ -5,6 +5,7 @@ use think\Db;
 
 class Organization extends BaseModel
 {
+    protected $table = 'Organization';
     protected $hidden = ['delete_time','update_time','img_id'];
 
     public function article(){

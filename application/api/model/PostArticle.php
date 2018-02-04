@@ -5,7 +5,7 @@ namespace app\api\model;
 
 class PostArticle extends BaseModel
 {
-    protected $table = "post_article";
+    protected $table = "Post_article";
 
     protected $hidden =['delete_time','update_time','postImg_id','headImg_id','avatarImg_id','create_time'];
 

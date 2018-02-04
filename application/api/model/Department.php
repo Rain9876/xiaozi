@@ -11,6 +11,7 @@ namespace app\api\model;
 
 class Department extends BaseModel
 {
+    protected $table = 'department';
     protected $hidden =['update_time','delete_time','grade_id'];
 
     public function classroom(){

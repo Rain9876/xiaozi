@@ -4,6 +4,7 @@ namespace app\api\model;
 use think\Db;
 class Society extends BaseModel
 {
+    protected $table = 'Society';
     protected $hidden = ['delete_time','update_time','img_id'];
 
     public function article(){

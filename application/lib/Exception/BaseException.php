@@ -6,7 +6,10 @@
  * Time: 下午11:27
  */
 
+namespace app\lib\Exception;
+
 use think\Exception;
+
 class BaseException extends Exception
 {
 

@@ -6,7 +6,13 @@
  * Time: 下午12:06
  */
 
-class Image
-{
+namespace app\api\model;
 
+class Image extends BaseModel
+{
+    protected $hidden = ['id', 'come_from', 'delete_time', 'update_time'];
+
+    public function getUrlAttr($value,$data){
+        return parent::prefixImgUrl($value,$data);
+    }
 }

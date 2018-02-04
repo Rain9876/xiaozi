@@ -1,0 +1,15 @@
+999 服务器内部错误
+
+10000 参数错误
+
+30000 请求的 section 不存在
+
+40000 请求的 Banner 不存在
+
+50000 TimeTable错误
+
+60000 Self Study search table 错误
+
+70000 请求的 Article 不存在
+
+80000 请求的 Linkage 不存在

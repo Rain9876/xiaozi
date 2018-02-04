@@ -6,15 +6,20 @@
  * Time: 上午11:56
  */
 
+namespace app\api\model;
+
 class Banner extends BaseModel
 {
+    protected $hidden = ['delete_time','update_time'];
 
     public function items(){
-        return $this->hasMany('Banner_item','id','banner_id');
+        return $this->hasMany('BannerItem','banner_id','id');
     }
 
 
     public static function getBannerID($id){
-        $result = self::with(['items','items.img'])->find($id);
+        $result = (new self())->with(['items','items.img'])->find($id);
+        return $result;
     }
+
 }

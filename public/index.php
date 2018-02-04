@@ -21,7 +21,8 @@ define('LOG_PATH', __DIR__ . '/../log/');
 require __DIR__ . '/../thinkphp/start.php';
 
 Log::init([
-    'type' => 'file',
+    // sql Log initialise
+    'type' => 'test',
     'path' => LOG_PATH,
     'level' => ['sql'],
 ]);

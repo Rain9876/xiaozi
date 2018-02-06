@@ -13,7 +13,7 @@ class SelfStudy extends BaseModel
     public static function getRoom($building, $week, $day)
     {
         $result = (new self())->alias('a')
-            ->field('a.id,Room,seat,weekday,name,num_week')
+            ->field('a.id,Room,seat,weekday,name,num_week,period')
             ->join('Building b', 'a.building_id = b.id')
             ->where('b.name', '=', $building)
             ->where('num_week', '=', $week)

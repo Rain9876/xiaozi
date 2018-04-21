@@ -1,5 +1,6 @@
 微信小程序 紫金小紫 服务器
 ===============
+
 ![xiaozi](https://www.zjxiaozi.xin/image/util/xiaozi.png)
 
 微信小程序“小紫”的设计与开发——基于提升大学生校园生活体验的设想。
